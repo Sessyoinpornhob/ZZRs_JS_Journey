@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="demo" class="sample" title="hello" data-ext="123">Cool!</div>
+        <input type="button" value="click" onclick="alert('click!')">
+        <div id="myDivv" class="new user"></div>
+    </body>
+
+    <!-- <script>
+        //获取并查看元素
+        let demo = document.getElementById("demo");
+        alert( demo.id ); //demo
+        alert( demo.className ); // sample
+        alert( demo.title ); // hello
+        alert( demo.getAttribute("class") ); // sample
+        alert( demo.getAttribute("data-ext") ); // 123
+    </script> -->
+
+    <!-- <script>
+        //修改元素
+        let demo = document.getElementById("demo");
+        //局部变量表示——let
+        demo.id = "heihei";
+        demo.className = "new";
+        demo.setAttribute("class", "new");
+        demo.setAttribute("data-ext", "abc");
+
+        alert(demo.className);
+        alert(demo.id);
+        alert(demo.title);
+    </script> -->
+
+    <script>
+        //还是修改元素和元素内容啥的
+        var demo = document.getElementById("demo");
+
+        alert( demo.innerHTML );
+        demo.innerHTML = "<p>ABCDE</p>"; // 设置元素内HTML（保留HTML）
+        alert( demo.textContent );
+        //demo.textContent = "<p>ABCDE</p>"; // 设置元素内文本（转义HTML）？
+
+        //创建元素并添加到页面底部（body）
+        let newDiv = document.createElement("div");
+        newDiv.id = "myDiv";
+        document.body.append(newDiv);
+
+        //创建元素并添加到已知圆度底部
+        let newP = document.createElement("p");
+        newDiv.append(newP);
+
+        //dom中的样式访问与设置
+        let div = document.getElementById("myDiv");
+        div.style.backgroundColor = "red";
+        div.style.width = "100px";
+        div.style.cssFloat = "right";
+
+        let divv = document.getElementById("myDivv");
+        div.className
+        div.classList.add("show");
+        
+    </script>
+        
+        
+
+</html>
