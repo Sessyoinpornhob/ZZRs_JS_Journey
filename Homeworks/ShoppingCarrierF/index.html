@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>购物车</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+	</head>
+</html>
+
+<body>
+    <div class='OutSide'>
+        <div class='title'>
+            <p class='topic'>您好今r来点什么</p>
+        </div>
+        <HR align = center width=95% color=#92bfba SIZE=5 >
+
+        <!--good1-->
+        <div class='goods'>
+            <img src="images/d1.png" height="205px">
+            <div class='information'>
+                <div class='details'>
+                    <span class='goodsTitle' id='goodsTitle1'>商品A</span>
+                    <span class="price">单价：5元</span>
+                </div>
+                <div class='numberChange1'>
+                    <span class='shuliang'><strong>数量：</strong></span>
+                    <div class='numberChange2'>
+                        <div class='add' onclick="add(1)">
+                            <span>+</span>
+                        </div>
+                        <p class='number' id='number1'>
+                            0
+                        </p>
+                        <div class='add' onclick="minus(1);">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <HR align=center width=95% color=#92bfba SIZE=2 >
+
+        <!--good2-->
+        <div class='goods'>
+            <img src="images/d2.png" height="205px">
+            <div class='information'>
+                <div class='details'>
+                    <span class='goodsTitle' id='goodsTitle2'>商品B</span>
+                    <span class="price">单价：10元</span>
+                </div>
+                <div class='numberChange1'>
+                    <span class='shuliang'><strong>数量：</strong></span>
+                    <div class='numberChange2'>
+                        <div class='add' onclick="add(2)">
+                            <span>+</span>
+                        </div>
+                        <div class='number' id='number2'>
+                            0
+                        </div>
+                        <div class='add' onclick="minus(2);">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <HR align=center width=95% color=#92bfba SIZE=2 >
+
+        <!--good3-->
+        <div class='goods'>
+            <img src="images/d3.png" height="205px">
+            <div class='information'>
+                <div class='details'>
+                    <span class='goodsTitle' id='goodsTitle3'>商品C</span>
+                    <span class="price">单价：15元</span>
+                </div>
+                <div class='numberChange1'>
+                    <span class='shuliang'><strong>数量：</strong></span>
+                    <div class='numberChange2'>
+                        <div class='add' onclick="add(3)">
+                            <span>+</span>
+                        </div>
+                        <div class='number' id='number3'>
+                            0
+                        </div>
+                        <div class='add' onclick="minus(3);">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <HR align=center width=95% color=#92bfba SIZE=2 >
+
+        <!-- display -->
+        <div class="display">
+            <span class="price" id="displayprice">总价</span>
+            <span class='add' id="getanswer" onclick="count();">结账</span>
+        </div>
+
+    </div>
+    
+</body>
+
+<script type="text/javascript" src="js/calculate.js"></script>
+</html>

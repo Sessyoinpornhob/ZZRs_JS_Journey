@@ -16,10 +16,24 @@ btn1.addEventListener("click", function()
     alert(`Please ${"task"}`);
 }, false) 
 
-let bin2 = document.getElementById("btn2");
+let btn2 = document.getElementById("btn2");
 btn2.addEventListener("click",function()
 {
     alert('click2!');
     alert(`Please ${task}`);
+    say(" hello !");
     //此处task是变量。
+    //
 },false)
+
+
+// say(undefined, undefined);
+// say(null, null);
+// say();
+let btn3 = document.getElementById("btn3");
+btn3.addEventListener("click", say, false);
+
+function say(name, message = " hello !")
+{
+    alert(name + ":" + message);
+}
